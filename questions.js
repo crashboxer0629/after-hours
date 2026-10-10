@@ -55,7 +55,12 @@ window.AFTER_HOURS_QUESTIONS = {
     {
       "level": 1,
       "type": "미션",
-      "text": "사랑한다고 말하기"
+      "text": "10초동안 꽉 안아주기"
+    },
+    {
+      "level": 1,
+      "type": "미션",
+      "text": "귀에다가 사랑한다고 말하기"
     },
     {
       "level": 2,
@@ -99,6 +104,11 @@ window.AFTER_HOURS_QUESTIONS = {
       "text": "10초동안 서로 밀착해있기"
     },
     {
+      "level": 2,
+      "type": "미션",
+      "text": "상대방 위에 올라타고 10초동안 마주보기"
+    },
+    {
       "level": 3,
       "type": "미션",
       "text": "진한 키스 5초"
@@ -122,6 +132,11 @@ window.AFTER_HOURS_QUESTIONS = {
       "level": 3,
       "type": "미션",
       "text": "갖고싶은 으른 장난감 1개 같이 골라보기"
+    },
+    {
+      "level": 3,
+      "type": "미션",
+      "text": "상대방 위에 올라타서 5초동안 키스"
     },
     {
       "level": 3,
@@ -164,9 +179,24 @@ window.AFTER_HOURS_QUESTIONS = {
       "text": "10초간 상대방 손가락 맛보기"
     },
     {
-      "level": 4,
+      "level": 3,
+      "type": "미션",
+      "text": "상대방 귀에 신음소리 5초"
+    },
+    {
+      "level": 3,
       "type": "미션",
       "text": "우리 오랜만에 키스한번 해볼까? (1분이상)"
+    },
+    {
+      "level": 3,
+      "type": "미션",
+      "text": "백허그 상태로 상대방 애무해주기"
+    },
+    {
+      "level": 3,
+      "type": "미션",
+      "text": "옷속에 물건 감추고 눈감고 입으로 찾기"
     },
     {
       "level": 4,
@@ -178,11 +208,7 @@ window.AFTER_HOURS_QUESTIONS = {
       "type": "미션",
       "text": "입으로 상대방 옷 벗기기"
     },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "백허그 상태로 상대방 애무해주기"
-    },
+
     {
       "level": 4,
       "type": "미션",
@@ -201,37 +227,7 @@ window.AFTER_HOURS_QUESTIONS = {
     {
       "level": 4,
       "type": "미션",
-      "text": "존댓말하면서 5분간 여자친구 손으로 자극하기"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "옷속에 물건 감추고 눈감고 입으로 찾기"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "상대방 귀에 신음소리 5초"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "같이 야동 1분 감상하고 감상평 말하기"
-    },
-    {
-      "level": 4,
-      "type": "미션",
       "text": "상대방 귀 입으로 애무 20초"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "상대방 쇄골에 술 담고 고양이처럼 핥아먹기"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "한번도 해본 적 없는 체위 찾아서 따라해보기"
     },
     {
       "level": 4,
@@ -248,7 +244,16 @@ window.AFTER_HOURS_QUESTIONS = {
       "type": "미션",
       "text": "혼자 하는모습 보여주기 1분"
     },
-    
+    {
+      "level": 4,
+      "type": "미션",
+      "text": "15회 삽입"
+    },   
+    {
+      "level": 4,
+      "type": "미션",
+      "text": "10회 삽입"
+    },   
     {
       "level": 4,
       "type": "미션",
@@ -263,11 +268,6 @@ window.AFTER_HOURS_QUESTIONS = {
       "level": 4,
       "type": "미션",
       "text": "상대방 엉덩이에 소중이 비비기 (여자는 남자 허벅지에)"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "상대방에게 욕하면서 애무"
     },
     {
       "level": 4,
@@ -292,16 +292,6 @@ window.AFTER_HOURS_QUESTIONS = {
     {
       "level": 4,
       "type": "미션",
-      "text": "사랑나누기 버킷리스트 5가지 함께 작성해보기"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "서로의 속옷 야하게 디자인해주기 (그림 그려주거나 상상해서 설명해주기)"
-    },
-    {
-      "level": 4,
-      "type": "미션",
       "text": "상대방 소중이 5초간 빨기"
     },
     {
@@ -322,17 +312,7 @@ window.AFTER_HOURS_QUESTIONS = {
     {
       "level": 4,
       "type": "미션",
-      "text": "사랑나눌때 본인이 느끼는 감각 아주 상세하게 설명해주기 (들어올때 뻐근해, 닿을때 찌릿찌릿해 등)"
-    },
-    {
-      "level": 4,
-      "type": "미션",
       "text": "팬티(속옷) 벗어서 상대방에게 선물"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "욕하면서 사랑 나누기 30초"
     },
     {
       "level": 4,
@@ -348,11 +328,6 @@ window.AFTER_HOURS_QUESTIONS = {
       "level": 4,
       "type": "미션",
       "text": "사랑 나누기 30초"
-    },
-    {
-      "level": 4,
-      "type": "미션",
-      "text": "안대씌우기 벌칙 (앞으로 나오는 벌칙 3번 안대쓰고 하기, 둘 다)"
     },
     {
       "level": 4,
