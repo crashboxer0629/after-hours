@@ -5,12 +5,12 @@ const initialHTML=document.documentElement.outerHTML;
 const $=id=>document.getElementById(id);
 let MISSIONS=window.AFTER_HOURS_QUESTIONS.mission.map(c=>[c.level-1,c.type,c.text]);
 let missionMin=0, missionMax=1, revealed=false, drawing=false;
-const missionNames=['가볍게','과감하게','아슬하게','화끈하게'];
+const missionNames=['가볍게','과감하게','아슬하게'];
 function renderRange(){ $('mission-min').value=String(missionMin);$('mission-max').value=String(missionMax);$('rangehint').textContent=(missionMin===missionMax?(missionMin+1)+'단계':(missionMin+1)+'–'+(missionMax+1)+'단계')+' 카드만 섞어요. 변경한 범위는 새 게임부터 적용돼요.'; }
 $('mission-min').onchange=()=>{missionMin=Number($('mission-min').value);if(missionMin>missionMax)missionMax=missionMin;renderRange();save();};
 $('mission-max').onchange=()=>{missionMax=Number($('mission-max').value);if(missionMax<missionMin)missionMin=missionMax;renderRange();save();};
 let names=[],deck=[],cursor=0,turn=0,active=false,roster=[],timerID=null,deadline=0;
-try{const s=JSON.parse(localStorage.getItem('after-hours-v1'));if(s){names=Array.isArray(s.names)?s.names.filter(n=>typeof n==='string'&&n.trim()).map(n=>n.slice(0,16)).slice(0,12):[];if(Number.isInteger(s.missionMin)&&Number.isInteger(s.missionMax)&&s.missionMin>=0&&s.missionMax<=3&&s.missionMin<=s.missionMax){missionMin=s.missionMin;missionMax=s.missionMax;}}}catch{}
+try{const s=JSON.parse(localStorage.getItem('after-hours-v1'));if(s){names=Array.isArray(s.names)?s.names.filter(n=>typeof n==='string'&&n.trim()).map(n=>n.slice(0,16)).slice(0,12):[];if(Number.isInteger(s.missionMin)&&Number.isInteger(s.missionMax)&&s.missionMin>=0&&s.missionMax<=3&&s.missionMin<=s.missionMax){missionMin=Math.min(s.missionMin,2);missionMax=Math.min(s.missionMax,2);}}}catch{}
 function save(){try{localStorage.setItem('after-hours-v1',JSON.stringify({names,missionMin,missionMax}))}catch{}}
 function renderNames(){$('players').replaceChildren();names.forEach((n,i)=>{const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=n+' ×';b.setAttribute('aria-label',n+' 삭제');b.onclick=()=>{names.splice(i,1);save();renderNames()};$('players').append(b)})}
 $('addform').onsubmit=e=>{e.preventDefault();const n=$('name').value.trim();if(!n)return;if(names.length>=12){$('error').textContent='최대 12명까지 함께할 수 있어요.';return}if(names.includes(n)){$('error').textContent='같은 이름 대신 별명을 넣어 주세요.';return}names.push(n);$('name').value='';$('error').textContent='';save();renderNames()};
